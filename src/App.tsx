@@ -29,6 +29,7 @@ export function App() {
       </Modal>
 
       <Dashboard />
+      
       <GlobalStyle />
     </>
   );
