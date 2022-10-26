@@ -31,7 +31,7 @@ export const Container = styled.div`
             font-weight: bold;
         }
 
-        &.widthdraw {
+        &.withdraw {
             color: var(--african-violet);
             font-weight: bold;
         }

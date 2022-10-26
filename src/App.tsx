@@ -1,8 +1,12 @@
 import { useState } from "react"
+import Modal from 'react-modal'
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
-import { GlobalStyle } from "./styles/global";
 import { NewTransactionModal } from "./components/NewTransactionModal";
+import { TransactionsProvider } from "./TransactionContext";
+import { GlobalStyle } from "./styles/global";
+
+Modal.setAppElement('#root')//Especificando o tipo de elemenento modal para o TypeScript
 
 export function App() {
   const [isOpenNewModalTransaction, setIsOpenNewModalTransaction] = useState(false)
@@ -17,7 +21,7 @@ export function App() {
 
 
   return (
-    <>
+    <TransactionsProvider>
       <Header onOpenNewTransactionModal={handleOpenNewTransaction} />
 
       <NewTransactionModal 
@@ -28,6 +32,6 @@ export function App() {
       <Dashboard />
       
       <GlobalStyle />
-    </>
+    </TransactionsProvider>
   );
 }
