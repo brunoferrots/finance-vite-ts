@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { Dashboard } from "./components/Dashboard";
 import { Header } from "./components/Header";
 import { NewTransactionModal } from "./components/NewTransactionModal";
-import { TransactionsProvider } from "./TransactionContext";
+import { TransactionsProvider } from "./components/hooks/TransactionContext";
 import { GlobalStyle } from "./styles/global";
 
 Modal.setAppElement('#root')//Especificando o tipo de elemenento modal para o TypeScript
