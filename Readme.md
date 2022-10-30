@@ -1,5 +1,5 @@
 PROJETO DE UMA APLICAÇÃO WEB PARA FINANÇAS PESSOAIS 
     
-NOTAS(para estudo):
+START
 
-    Route() -> api interna para criação de rotas
+> npm run dev
